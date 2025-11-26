@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.web.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@meta-1/wiki-types": ["../../libs/types/src"],
+      "@meta-1/wiki-types/*": ["../../libs/types/src/*"]
+    },
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
